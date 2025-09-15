@@ -18,4 +18,4 @@ public AttendanceRecord(int studentId, int courseId, String status) {
   public void displayRecord() {
     System.out.println("Attendance: Student ID " + studentId + " in Course ID C " + courseId + "- Status: " + status);
   }
-}
+} 
