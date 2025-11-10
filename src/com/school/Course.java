@@ -3,21 +3,18 @@ package com.school;
 public class Course implements Storable {
     private static int nextCourseIdCounter = 101;
 
-    private int courseId;       // Made private
-    private String courseName;  // Made private
+    private int courseId;      
+    private String courseName;  
 
-    // Constructor
     public Course(String courseName) {
-        this.courseId = nextCourseIdCounter++; // Auto-increment and assign ID
-        this.courseName = courseName;          // Assign course name
+        this.courseId = nextCourseIdCounter++; 
+        this.courseName = courseName;          
     }
 
-    // Getter for courseId
     public int getCourseId() {
         return courseId;
     }
 
-    // Getter for courseName
     public String getCourseName() {
         return courseName;
     }
@@ -28,7 +25,6 @@ public class Course implements Storable {
 
     @Override
     public String toDataString() {
-        // Format: courseId,courseName
         return courseId + "," + courseName;
     }
 }
